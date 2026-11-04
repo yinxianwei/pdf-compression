@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='PDF压缩工具',
+    name='PDFCompressor',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

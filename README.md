@@ -4,7 +4,7 @@ Windows 桌面小工具（Python + tkinter），批量压缩 PDF：重采样图�
 
 ## 使用
 
-1. 打开 `PDF压缩工具.exe`。
+1. 打开 `PDFCompressor.exe`。
 2. 点「选择 PDF 文件…」，可多选，也可把文件拖到 exe 上直接打开。
 3. 选压缩强度后点「开始压缩」。
 
@@ -18,7 +18,9 @@ Windows 桌面小工具（Python + tkinter），批量压缩 PDF：重采样图�
 
 ## 下载
 
-到 [Releases](https://github.com/yinxianwei/pdf-compression/releases) 下载最新 `PDF压缩工具.exe`，单文件、免安装。
+到 [Releases](https://github.com/yinxianwei/pdf-compression/releases) 下载最新 `PDFCompressor.exe`，单文件、免安装。
+
+> 文件名用 ASCII：GitHub 会把 release 附件名里的非 ASCII 字符从下载链接中去掉，中文名会被剥成 `PDF.exe`。
 
 ## 源码运行
 
@@ -34,12 +36,12 @@ uv sync --dev
 uv run pyinstaller --noconfirm --clean "PDF压缩工具.spec"
 ```
 
-产物在 `dist/PDF压缩工具.exe`。
+产物在 `dist/PDFCompressor.exe`。
 
 ## 自动发布
 
 发布流程由 `.github/workflows/release.yml` 负责，在 Windows runner 上打包：
 
 1. 在 GitHub 上创建 release（打 tag，如 `v1.0.0`）并点 Publish。
-2. Actions 自动构建，把 `PDF压缩工具.exe` 附加到该 release 供下载。
+2. Actions 自动构建，把 `PDFCompressor.exe` 附加到该 release 供下载。
 3. 也可手动触发 `Build EXE` workflow，产物在 Actions 的 Artifacts 里下载。

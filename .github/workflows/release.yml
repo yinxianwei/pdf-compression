@@ -39,5 +39,5 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
-          name: PDF压缩工具-windows-x64
+          name: PDFCompressor-windows-x64
           path: dist/*.exe
